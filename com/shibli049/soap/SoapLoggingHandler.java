@@ -33,7 +33,6 @@ import javax.xml.ws.handler.soap.SOAPMessageContext;
  */
 public class SoapLoggingHandler implements SOAPHandler<SOAPMessageContext> {
 
-// Initialize OtputStream (fos) etc. ...
     public boolean handleMessage(SOAPMessageContext c) {
         SOAPMessage msg = c.getMessage();
 
