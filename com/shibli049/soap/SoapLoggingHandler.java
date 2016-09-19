@@ -40,9 +40,9 @@ public class SoapLoggingHandler implements SOAPHandler<SOAPMessageContext> {
 
         try {
             if (request) { // This is a request message.
-                // Write the message to the output stream 
+                // Write the message to the output stream
                 msg.writeTo(System.out);
-            } else { // This is the response message 
+            } else { // This is the response message
                 msg.writeTo(System.out);
             }
         } catch (Exception ex) {
@@ -68,11 +68,11 @@ public class SoapLoggingHandler implements SOAPHandler<SOAPMessageContext> {
 
     /**
      * Pass your web service proxy port here.
-     * This method will add SoapLoggingHandler class 
-     * as a handler chain. 
+     * This method will add SoapLoggingHandler class
+     * as a handler chain.
      * @param <WebServiceProxyPort>
      * @param wspp
-     * 
+     *
      */
     public static <WebServiceProxyPort> void setHandler(WebServiceProxyPort wspp) {
         BindingProvider bp = (BindingProvider) wspp;
